@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PVZ Replanted Localizer - تحميل</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>PVZ Replanted Localizer</h1>
+      <p>أداة استخراج/تنقية النصوص وتعريبها لـ PVZ Replanted</p>
+      <div class="actions">
+        <a class="btn" href="downloads/PVZReplantedLocalizer.zip" download>تحميل البرنامج</a>
+        <a class="btn secondary" href="#usage">طريقة الاستخدام</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="usage">
+      <h2>طريقة الاستخدام السريعة</h2>
+      <ol>
+        <li>فك ضغط الملف بعد التحميل.</li>
+        <li>شغّل الطرفية داخل مجلد التنفيذ.</li>
+        <li>أوامر أساسية:
+          <pre><code>PVZReplantedLocalizer scan --root "F:\SteamLibrary\steamapps\common\PVZ Replanted"
+PVZReplantedLocalizer extract-strings --root "F:\SteamLibrary\steamapps\common\PVZ Replanted" --min 4
+PVZReplantedLocalizer filter-strings --root "F:\SteamLibrary\steamapps\common\PVZ Replanted"
+PVZReplantedLocalizer analyze-localization --root "F:\SteamLibrary\steamapps\common\PVZ Replanted"
+PVZReplantedLocalizer search-localization --root "F:\SteamLibrary\steamapps\common\PVZ Replanted" --q "menu;start;exit"</code></pre>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>المخرجات</h2>
+      <ul>
+        <li>output/strings.csv و strings_readable.csv</li>
+        <li>output/strings_localization.csv و النسخ المنقاة/enriched</li>
+        <li>output/localization_stats_by_file.csv</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <span>© 2025 PVZ Replanted Localizer</span>
+    </div>
+  </footer>
+</body>
+</html>
